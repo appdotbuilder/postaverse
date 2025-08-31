@@ -78,74 +78,61 @@
 }
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --destructive-foreground: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.87 0 0);
-    --chart-1: oklch(0.646 0.222 41.116);
-    --chart-2: oklch(0.6 0.118 184.704);
-    --chart-3: oklch(0.398 0.07 227.392);
-    --chart-4: oklch(0.828 0.189 84.429);
-    --chart-5: oklch(0.769 0.188 70.08);
+    /* Space-themed dark colors - Deep space background */
+    --background: oklch(0.08 0.02 240); /* Very dark space blue */
+    --foreground: oklch(0.95 0.02 240); /* Light blue-white for text */
+    
+    /* Card colors with subtle space tint */
+    --card: oklch(0.12 0.025 240); /* Darker card background */
+    --card-foreground: oklch(0.9 0.02 240);
+    
+    /* Popover colors */
+    --popover: oklch(0.12 0.025 240);
+    --popover-foreground: oklch(0.9 0.02 240);
+    
+    /* Primary colors - Cosmic purple */
+    --primary: oklch(0.6 0.15 280); /* Bright cosmic purple */
+    --primary-foreground: oklch(0.98 0.01 280);
+    
+    /* Secondary colors - Deep space gray */
+    --secondary: oklch(0.2 0.02 240);
+    --secondary-foreground: oklch(0.9 0.02 240);
+    
+    /* Muted colors */
+    --muted: oklch(0.18 0.025 240);
+    --muted-foreground: oklch(0.65 0.02 240);
+    
+    /* Accent colors - Nebula blue */
+    --accent: oklch(0.5 0.12 220); /* Bright nebula blue */
+    --accent-foreground: oklch(0.98 0.01 220);
+    
+    /* Destructive colors - Mars red */
+    --destructive: oklch(0.55 0.2 20); /* Mars red */
+    --destructive-foreground: oklch(0.98 0.01 20);
+    
+    /* Border and input colors */
+    --border: oklch(0.25 0.03 240);
+    --input: oklch(0.25 0.03 240);
+    --ring: oklch(0.6 0.15 280); /* Same as primary for focus rings */
+    
+    /* Chart colors - Space-themed palette */
+    --chart-1: oklch(0.6 0.15 280); /* Purple */
+    --chart-2: oklch(0.65 0.15 200); /* Blue */
+    --chart-3: oklch(0.7 0.12 160); /* Cyan */
+    --chart-4: oklch(0.55 0.18 320); /* Magenta */
+    --chart-5: oklch(0.6 0.14 60); /* Gold */
+    
     --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.87 0 0);
-}
-
-.dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.145 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.145 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.985 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.396 0.141 25.723);
-    --destructive-foreground: oklch(0.637 0.237 25.331);
-    --border: oklch(0.269 0 0);
-    --input: oklch(0.269 0 0);
-    --ring: oklch(0.439 0 0);
-    --chart-1: oklch(0.488 0.243 264.376);
-    --chart-2: oklch(0.696 0.17 162.48);
-    --chart-3: oklch(0.769 0.188 70.08);
-    --chart-4: oklch(0.627 0.265 303.9);
-    --chart-5: oklch(0.645 0.246 16.439);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.985 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(0.269 0 0);
-    --sidebar-ring: oklch(0.439 0 0);
+    
+    /* Sidebar colors */
+    --sidebar: oklch(0.1 0.025 240); /* Darker sidebar */
+    --sidebar-foreground: oklch(0.85 0.02 240);
+    --sidebar-primary: oklch(0.6 0.15 280);
+    --sidebar-primary-foreground: oklch(0.98 0.01 280);
+    --sidebar-accent: oklch(0.18 0.025 240);
+    --sidebar-accent-foreground: oklch(0.9 0.02 240);
+    --sidebar-border: oklch(0.22 0.03 240);
+    --sidebar-ring: oklch(0.6 0.15 280);
 }
 
 @layer base {
